@@ -25,17 +25,17 @@ function toggleTheme () {
           <nuxt-link to="/project" class="nav-link text-primary">Projects</nuxt-link>
         </li>
         <li class="nav-item mx-2">
-            <nuxt-link to="/twitter" class="nav-link text-primary">
+            <nuxt-link href="https://twitter.com/ali_aryaeifar" class="nav-link text-primary">
                 <Icon icon="ri:twitter-x-line"/>
             </nuxt-link>
         </li>
         <li class="nav-item mx-2 ">
-            <nuxt-link to="/github" class="nav-link text-primary">
+            <nuxt-link href="https://github.com/Aryaeifar" class="nav-link text-primary">
                 <Icon icon="ri:github-fill" />
             </nuxt-link>
         </li>
         <li class="nav-item mx-2 text-primary" style="cursor:pointer">
-          <div class="da">
+          <div>
             <Icon :icon="theme.global.name.value == 'light' ? 'ri:sun-line' : 'ri:moon-fill'"  @click="toggleTheme" />
           </div>
         </li>
