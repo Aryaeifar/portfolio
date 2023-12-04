@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("/assets/fonts/Inter-Regular.woff2");
+}
+
+* {
+  scrollbar-color: #111;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  line-height: 1.5;
+  font-family: "Inter-Regular";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: ltr;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Inter-Regular";
+  overflow-y: scroll;
+  overflow-x: hidden;
+  &.modal-open {
+    .custom-scroll {
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+  }
+}
+.mask-image {
+    z-index: -1;
+    mask-image: radial-gradient(circle, transparent, black);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    pointer-events: none;
+    opacity: .3;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.header {
+    padding: 2rem;
+}
+.scroll-to-top {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    opacity: .3;
+    transition: .3s;
+}
+.scroll-to-top:hover {
+    opacity: 1;
+}
+.default-layout {
+    min-height: 100vh;
+}
+.nav-item {
+    list-style: none;
+    
+    font-size: 1rem;    
+}
+.nav-link {
+    opacity: .6;
+}
+.prose {
+    margin: auto;
+    max-width: 65ch;
+    font-size: 1rem;
+    line-height: 1.75;
+    h1 {
+        font-weight: 800;
+        font-size: 2.25em;
+        line-height: 1.1111111;
+    }
+    p {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+        opacity: .6;
+    }   
+}
+// .dark-mode {
+//   transform: scale(0);
+//   left: 0;
+//   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   width: 250vw;
+//   height: 250vw;
+//   border-radius: 50%;
+//   transition: 1000ms ease-in-out;
+//   display: flex;
+//   flex: 0 0 auto  ;
+// }
