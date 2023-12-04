@@ -43,6 +43,13 @@ import { Icon } from '@iconify/vue';
             Instagram
           </span>
           </nuxt-link>
+          <nuxt-link to="/">
+            <span class="d-flex align-center text-decoration-underline me-2">
+            <Icon icon="ph:linkedin-logo" width="20" height="20" class="me-1"></Icon>
+            Linkedin
+          </span>
+          </nuxt-link>
+          
          </div>
         </p>
         <p style="--stagger: 6" data-animate>

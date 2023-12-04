@@ -12,7 +12,6 @@ function toggleTheme () {
     <div>
         <span class="mdi mdi-vuejs text-h5"></span>
         <span class="mdi mdi-nuxt text-h5"></span>
-
     </div>
     <div class="nav">
       <ul class="d-flex">
