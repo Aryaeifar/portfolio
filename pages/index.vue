@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import { Icon } from '@iconify/vue';
+
+</script>
 
 <template>
   <div>
@@ -7,38 +10,43 @@
     </div>
     <article>
       <div class="prose">
-        <p style="--stagger:1" data-animate>Hey ites ali aryaeifar</p>
-        <p style="--stagger:2" data-animate>
-          dolore quam. Repudiandae temporibus quia ratione! Illum debitis aspernatur laudantium nam officiis molestiae
-          quia. Blanditiis, error!
+        <p style="--stagger: 1" data-animate>
+          I'm Ali aryaei, an enthusiastic Frontend Developer with a solid three years of experience in crafting dynamic
+          and intuitive user interfaces using Vue and Nuxt.
         </p>
-        <p style="--stagger:3" data-animate>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendiiquid cupiditate esse quae autem.</p>
-        <p style="--stagger:4" data-animate>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat saepe non atque, praesentium excepturi fuga
-          quaerat maiores aliquid et ut repellendus facere sequi nemo commodi. Illum velit eos sapiente reprehenderit.
+        <p style="--stagger: 2" data-animate>
+          I take immense pride in my ability to bring designs to life and create seamless web experiences that captivate
+          users. From building interactive components to optimizing performance, my passion for frontend development
+          drives me to stay abreast of the latest technologies and best practices.
         </p>
-        <p style="--stagger:5" data-animate>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat saepe non atque, praesentium excepturi fuga
+        <p style="--stagger: 3" data-animate>
+          Let's connect and collaborate on exciting projects that push the boundaries of web development.
         </p>
-        <p style="--stagger:6" data-animate>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat saepe non atque, praesentium excepturi fuga
-          quaerat maiores aliquid et ut repellendus facere sequi nemo commodi. Illum velit eos sapiente reprehenderit.
+        <p style="--stagger: 4" data-animate>Find me on</p>
+        <p style="--stagger: 5" data-animate>
+         <div class="d-flex">
+          <nuxt-link to="/">
+            <span class="d-flex align-center text-decoration-underline me-2">
+            <Icon icon="mdi:github" width="20" height="20" class="me-1"></Icon>
+            GitHub
+          </span>
+          </nuxt-link>
+          <nuxt-link to="/">
+            <span class="d-flex align-center text-decoration-underline me-2">
+            <Icon icon="ri:twitter-x-line" width="20" height="20" class="me-1"></Icon>
+            Twitter
+          </span>
+          </nuxt-link>
+          <nuxt-link to="/">
+            <span class="d-flex align-center text-decoration-underline me-2">
+            <Icon icon="ri:instagram-line" width="20" height="20" class="me-1"></Icon>
+            Instagram
+          </span>
+          </nuxt-link>
+         </div>
         </p>
-        <p style="--stagger:7" data-animate>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat saepe non atque, praesentium excepturi fuga
-          quaerat maiores aliquid et ut repellendus facere sequi nemo commodi. Illum velit eos sapiente reprehenderit.
-        </p>  <p style="--stagger:8" data-animate>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat saepe non atque, praesentium excepturi fuga
-          quaerat maiores aliquid et ut repellendus facere sequi nemo commodi. Illum velit eos sapiente reprehenderit.
-        </p>  <p style="--stagger:9" data-animate>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat saepe non atque, praesentium excepturi fuga
-          quaerat maiores aliquid et ut repellendus facere sequi nemo commodi. Illum velit eos sapiente reprehenderit.
-        </p>  <p style="--stagger:10" data-animate>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat saepe non atque, praesentium excepturi fuga
-          quaerat maiores aliquid et ut repellendus facere sequi nemo commodi. Illum velit eos sapiente reprehenderit.
-        </p>  <p style="--stagger:11" data-animate>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat saepe non atque, praesentium excepturi fuga
-          quaerat maiores aliquid et ut repellendus facere sequi nemo commodi. Illum velit eos sapiente reprehenderit.
+        <p style="--stagger: 6" data-animate>
+          If you enjoy my works, Lets connect to each other 🤝
         </p>
       </div>
     </article>
