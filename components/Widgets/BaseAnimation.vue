@@ -3,7 +3,7 @@ import type { Style } from 'nuxt/dist/head/runtime/components';
 import { useRafFn } from "@vueuse/core";
 import { useRouteQuery } from "@vueuse/router";
 import { onMounted, ref, watch } from "vue";
-import { initCanvas, polar2cart, r15,r30,r60, r90, r120, r180, r360 } from "../utils";
+import { initCanvas, polar2cart, r15, r90, r180} from "../utils";
 const props = defineProps({
   color: {
     type:String

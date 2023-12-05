@@ -1,8 +1,10 @@
 <template>
-  <NuxtLayout>
-    <NuxtLoadingIndicator color="red" :height="5" />
-    <NuxtPage />
-  </NuxtLayout>
+    <NuxtLayout>
+      <div>
+        <NuxtLoadingIndicator color="red" />
+        <NuxtPage />
+      </div>
+    </NuxtLayout>
 </template>
 <style>
 .layout-enter-active,
@@ -23,5 +25,5 @@
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
-} 
+}
 </style>

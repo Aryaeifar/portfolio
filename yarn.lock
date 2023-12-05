@@ -629,7 +629,7 @@
     rc9 "^2.1.1"
     semver "^7.5.4"
 
-"@nuxt/devtools@^1.0.3", "@nuxt/devtools@latest":
+"@nuxt/devtools@^1.0.3", "@nuxt/devtools@^1.0.4":
   version "1.0.4"
   resolved "https://registry.npmjs.org/@nuxt/devtools/-/devtools-1.0.4.tgz"
   integrity sha512-G1Oo9+TaOYzePIXpNX+Zzalw/rJyIZKZpZmXfzolPlOJSA1i0JKzZX6Z7iQHdqPwNJ8t+HnVaF4PghPIpo1kwg==
