@@ -5,7 +5,7 @@ import { Icon } from '@iconify/vue';
 
 <template>
   <div>
-    <div class="prose mb8">
+    <div class="prose mb-8">
       <h1 class="text-h3 text-title">Ali Aryaeifar</h1>
     </div>
     <article>
@@ -25,25 +25,25 @@ import { Icon } from '@iconify/vue';
         <p style="--stagger: 4" data-animate>Find me on</p>
         <p style="--stagger: 5" data-animate>
          <div class="d-flex">
-          <nuxt-link href="https://github.com/Aryaeifar">
+          <nuxt-link href="https://github.com/Aryaeifar" target="_blank" >
             <span class="d-flex align-center text-decoration-underline me-2">
             <Icon icon="mdi:github" width="20" height="20" class="me-1"></Icon>
             GitHub
           </span>
           </nuxt-link>
-          <nuxt-link href="https://twitter.com/ali_aryaeifar">
+          <nuxt-link href="https://twitter.com/ali_aryaeifar" target="_blank" >
             <span class="d-flex align-center text-decoration-underline me-2">
             <Icon icon="ri:twitter-x-line" width="20" height="20" class="me-1"></Icon>
             Twitter
           </span>
           </nuxt-link>
-          <nuxt-link href="https://instagram.com/ali.aryaeifar?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
+          <nuxt-link href="https://instagram.com/ali.aryaeifar?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" >
             <span class="d-flex align-center text-decoration-underline me-2">
             <Icon icon="ri:instagram-line" width="20" height="20" class="me-1"></Icon>
             Instagram
           </span>
           </nuxt-link>
-          <nuxt-link href="https://www.linkedin.com/in/ali-aryaeifar-a38b87195?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+          <nuxt-link href="https://www.linkedin.com/in/ali-aryaeifar-a38b87195?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" >
             <span class="d-flex align-center text-decoration-underline me-2">
             <Icon icon="ph:linkedin-logo" width="20" height="20" class="me-1"></Icon>
             Linkedin

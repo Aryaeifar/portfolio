@@ -7,7 +7,7 @@ export * from './vector'
 export * from './canvas'
 export * from './shake'
 export * from './colors'
-
+export * from './custom'
 export const noop = () => {}
 
 export function shuffle<T>(arr: T[]): T[] {

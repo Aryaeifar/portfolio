@@ -92,16 +92,24 @@ a {
         opacity: .6;
     }   
 }
-// .dark-mode {
-//   transform: scale(0);
-//   left: 0;
-//   right: 0;
-//   top: 0;
-//   bottom: 0;
-//   width: 250vw;
-//   height: 250vw;
-//   border-radius: 50%;
-//   transition: 1000ms ease-in-out;
-//   display: flex;
-//   flex: 0 0 auto  ;
-// }
+
+.svg-sign {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.path {
+  stroke-dasharray: 100;
+}
+.projects-card {
+  transform: scale(1);
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.projects-card:hover {
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
