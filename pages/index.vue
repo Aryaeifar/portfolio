@@ -15,15 +15,18 @@ import { Icon } from '@iconify/vue';
           and intuitive user interfaces using Vue and Nuxt.
         </p>
         <p style="--stagger: 2" data-animate>
+          Working at <span style="color: white !important; font-weight: 700;">Hemend</span>.
+        </p>
+        <p style="--stagger: 3" data-animate>
           I take immense pride in my ability to bring designs to life and create seamless web experiences that captivate
           users. From building interactive components to optimizing performance, my passion for frontend development
           drives me to stay abreast of the latest technologies and best practices.
         </p>
-        <p style="--stagger: 3" data-animate>
+        <p style="--stagger: 4" data-animate>
           Let's connect and collaborate on exciting projects that push the boundaries of web development.
         </p>
-        <p style="--stagger: 4" data-animate>Find me on</p>
-        <p style="--stagger: 5" data-animate>
+        <p style="--stagger: 5" data-animate>Find me on</p>
+        <p style="--stagger: 6" data-animate>
          <div class="d-flex">
           <nuxt-link href="https://github.com/Aryaeifar" target="_blank" >
             <span class="d-flex align-center text-decoration-underline me-2">
@@ -52,7 +55,7 @@ import { Icon } from '@iconify/vue';
           
          </div>
         </p>
-        <p style="--stagger: 6" data-animate>
+        <p style="--stagger: 7" data-animate>
           If you enjoy my works, Lets connect to each other 🤝
         </p>
       </div>

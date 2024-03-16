@@ -1,7 +1,9 @@
 <script setup>
+import { useWindowScroll } from "@vueuse/core";
 const scroll_top = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+const { y } = useWindowScroll();
 </script>
 
 <template>
@@ -13,9 +15,10 @@ const scroll_top = () => {
         <div class="mask-image">
           <WidgetsBaseAnimation color="red" />
         </div>
+        <div class="bg-white"></div>
         <slot />
       </main>
-      <button class="scroll-to-top" @click="scroll_top">
+      <button v-show="y > 200" class="scroll-to-top" @click="scroll_top">
         <span class="mdi mdi-arrow-up"></span>
       </button>
     </div>

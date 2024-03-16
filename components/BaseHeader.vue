@@ -12,6 +12,7 @@ function toggleTheme() {
     <div>
       <span class="mdi mdi-vuejs text-h5"></span>
       <span class="mdi mdi-nuxt text-h5"></span>
+
     </div>
     <div class="nav">
       <ul class="d-flex">
@@ -25,12 +26,12 @@ function toggleTheme() {
           <nuxt-link to="/projects" class="nav-link text-primary">Projects</nuxt-link>
         </li>
         <li class="nav-item mx-2">
-          <nuxt-link href="https://twitter.com/ali_aryaeifar" target="_blank"  class="nav-link text-primary">
+          <nuxt-link href="https://twitter.com/ali_aryaeifar" target="_blank" class="nav-link text-primary">
             <Icon icon="ri:twitter-x-line" />
           </nuxt-link>
         </li>
         <li class="nav-item mx-2">
-          <nuxt-link href="https://github.com/Aryaeifar" target="_blank"  class="nav-link text-primary">
+          <nuxt-link href="https://github.com/Aryaeifar" target="_blank" class="nav-link text-primary">
             <Icon icon="ri:github-fill" />
           </nuxt-link>
         </li>
@@ -43,4 +44,19 @@ function toggleTheme() {
     </div>
   </div>
 </template>
+<style>
+.path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: dash 3s linear alternate infinite;
+}
 
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+</style>
