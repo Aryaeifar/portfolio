@@ -110,6 +110,7 @@ a {
 }
 
 .projects-card:hover {
-  transform: scale(1.1);
+  // transform: scale(1.1);
+  background-color: #454545;
   transition: .3s ease-in-out;
 }

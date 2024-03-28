@@ -37,6 +37,7 @@
     "happy-dom": "^13.3.1",
     "mapbox-gl": "^3.0.1",
     "sass": "^1.69.5",
+    "vue3-carousel": "^0.3.1",
     "vuetify": "^3.4.0-beta.1"
   }
 }
