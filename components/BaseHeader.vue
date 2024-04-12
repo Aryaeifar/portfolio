@@ -12,16 +12,15 @@ function toggleTheme() {
     <div>
       <span class="mdi mdi-vuejs text-h5"></span>
       <span class="mdi mdi-nuxt text-h5"></span>
-
     </div>
     <div class="nav">
       <ul class="d-flex">
         <li class="nav-item mx-2">
           <nuxt-link to="/" class="nav-link text-primary"> Me </nuxt-link>
         </li>
-        <li class="nav-item mx-2">
+        <!-- <li class="nav-item mx-2">
           <nuxt-link to="/blog" class="nav-link text-primary"> Blog </nuxt-link>
-        </li>
+        </li> -->
         <li class="nav-item mx-2">
           <nuxt-link to="/projects" class="nav-link text-primary">Projects</nuxt-link>
         </li>

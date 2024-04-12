@@ -15,13 +15,27 @@ import { Icon } from '@iconify/vue';
           and intuitive user interfaces using Vue and Nuxt.
         </p>
         <p style="--stagger: 2" data-animate>
-          Working at <span style="color: white !important; font-weight: 700;">Hemend</span>.
+          Open to <span style="color: white !important; font-weight: 700;">Work</span>.
         </p>
         <p style="--stagger: 3" data-animate>
           I take immense pride in my ability to bring designs to life and create seamless web experiences that captivate
           users. From building interactive components to optimizing performance, my passion for frontend development
           drives me to stay abreast of the latest technologies and best practices.
         </p>
+        <div style="--stagger: 4" data-animate>
+          Skills:
+        <ul>
+          <li> JavaScript</li>
+          <li> HTML & CSS</li>
+          <li> VUE</li>
+          <li> NUXT</li>
+          <li> Bootstrap</li>
+          <li> VUETIFY</li>
+          <li> TAILWIND</li>
+          <li> GIT</li>
+        </ul>
+        </div>
+       
         <p style="--stagger: 4" data-animate>
           Let's connect and collaborate on exciting projects that push the boundaries of web development.
         </p>
