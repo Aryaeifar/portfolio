@@ -129,6 +129,7 @@ const shahrdariInfo = [
                     </ul>
                   </div>
                   <div>
+                    <span class="text-danger">CHECK IN RESPONSIVE MODE</span>
                     menuly.vip/flylounge
                   </div>
                 </v-card-text>
