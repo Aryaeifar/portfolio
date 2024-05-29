@@ -38,7 +38,7 @@ const shahrdariInfo = [
         <v-container>
           <v-row>
             <v-col cols="12" lg="4" style="--stagger: 1" data-animate>
-              <div type="button" @click="minagoo = true">
+              <div type="button">
                 <v-card class="mx-auto projects-card" max-width="374">
                 <template v-slot:loader="{ isActive }">
                   <v-progress-linear  
@@ -91,7 +91,7 @@ const shahrdariInfo = [
               
             </v-col>  
               <v-col cols="12" lg="4" style="--stagger: 1" data-animate>
-              <div type="button" @click="flylounge = false">
+              <div type="button">
                 <v-card class="mx-auto projects-card" max-width="374">
                 <template v-slot:loader="{ isActive }">
                   <v-progress-linear  
@@ -144,7 +144,7 @@ const shahrdariInfo = [
               
             </v-col> 
              <v-col cols="12" lg="4" style="--stagger: 1" data-animate>
-              <div type="button" @click="shahrdari = true">
+              <div type="button">
                 <v-card class="mx-auto projects-card" max-width="374">
                 <template v-slot:loader="{ isActive }">
                   <v-progress-linear  
