@@ -2,9 +2,22 @@
 import { useTheme } from "vuetify";
 import { Icon } from "@iconify/vue";
 const theme = useTheme();
+// function toggleTheme() {
+//   theme.global.name.value = theme.global.current.value.dark ? "light" : "dark";
+// }
 function toggleTheme() {
-  theme.global.name.value = theme.global.current.value.dark ? "light" : "dark";
+  const newTheme = theme.global.current.value.dark ? "light" : "dark";
+  theme.global.name.value = newTheme;
+  localStorage.setItem("theme", newTheme);
 }
+
+// Read and apply the theme from local storage when the component is mounted
+onMounted(() => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    theme.global.name.value = savedTheme;
+  }
+});
 </script>
 
 <template>
