@@ -1,15 +1,16 @@
-import type { Style } from 'nuxt/dist/head/runtime/components';
-<script setup="props" lang="ts">
+<script setup lang="ts">
 import { useRafFn } from "@vueuse/core";
-import { useRouteQuery } from "@vueuse/router";
+import { useRoute } from "vue-router";
 import { onMounted, ref, watch } from "vue";
 import { initCanvas, polar2cart, r15, r90, r180 } from "../../utils";
+
 const props = defineProps({
   color: {
-    type:String
-  }
-})
-const shot = useRouteQuery("shot");
+    type: String,
+  },
+});
+
+const route = useRoute();
 const el = ref<HTMLCanvasElement | null>(null);
 
 const { random } = Math;
@@ -47,7 +48,7 @@ onMounted(async () => {
     const rad1 = rad + random() * r15;
     const rad2 = rad - random() * r15;
 
-    if (nx < -100 || nx > 1920 || ny < -100 || ny > 919) return;
+    if (nx < -100 || nx > width || ny < -100 || ny > height) return;
 
     if (iterations <= init.value || random() > 0.5) steps.push(() => step(nx, ny, rad1));
     if (iterations <= init.value || random() > 0.5) steps.push(() => step(nx, ny, rad2));
@@ -67,27 +68,27 @@ onMounted(async () => {
 
   const controls = useRafFn(frame, { immediate: false });
 
-  f.start = () => {
+  const restartAnimation = () => {
     controls.pause();
     iterations = 0;
     ctx.clearRect(0, 0, width, height);
-    ctx.lineWidth = .3;
+    ctx.lineWidth = 0.3;
     ctx.strokeStyle = props.color;
     prevSteps = [];
     steps =
-      // random() < .5 ? [() => step(0, random() * 400, 0), () => step(1920, random() * 919, r180)] : [() => step(random() * 400, 0, r90), () => step(random() * 400, 919, -r90)];
-      random() < .5 ? [() => step(0, random() * 919, 0), () => step(random() * 919, 0, r90),() => step(1920, random() * 919, r180)] : [() => step(0, random() * 919, 0),() => step(1920, random() * 919, r180), () => step(random() * 400, 919, -r90)];
-      // [
-      //   () => step(0, random() * 919, 0), //From left to right
-      //   () => step(random() * 919, 0, r90), // From top to bottom
-      //   () => step(1920, random() * 919, r180), //From right to left
-      //   () => step(random() * 400, 919, -r90), //from bottom to top
-      // ]
+      random() < 0.5
+        ? [() => step(0, random() * height, 0), () => step(random() * width, 0, r90), () => step(width, random() * height, r180)]
+        : [() => step(0, random() * height, 0), () => step(width, random() * height, r180), () => step(random() * width, height, -r90)];
+
     controls.resume();
     stopped.value = false;
   };
 
-  f.start();
+  watch(() => route.path, () => {
+    restartAnimation();
+  });
+
+  restartAnimation();
 });
 </script>
 
