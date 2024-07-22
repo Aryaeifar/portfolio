@@ -104,15 +104,14 @@ a {
   stroke-dasharray: 100;
 }
 .projects-card {
-  // transform: scale(1);
-  transition: .3s ease-in-out;
   cursor: pointer;
+    transition: .6s all ease-in-out;
+
 }
 
 .projects-card:hover {
-  // transform: scale(1.1);
-  // background-color: #454545;
-  // transition: .3s ease-in-out;
+  transform: scale(1.02);
+  transition: .6s all ease-in-out;
 }
 .site-addressr {
   transition: .3s ease-in-out;
@@ -125,5 +124,5 @@ a {
 //   transition: .6s all ease-in-out;
 // }
 // .basecard-img:hover {
-//   transform: scale(1.2);
+//   transform: scale(1.1);
 // }

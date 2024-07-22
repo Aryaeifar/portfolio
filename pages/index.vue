@@ -1,10 +1,12 @@
 <script setup>
 import { Icon } from '@iconify/vue';
 
+
 </script>
 
 <template>
   <div>
+   
     <div class="prose mb-8">
       <h1 class="text-h3 text-title">Ali Aryaeifar</h1>
     </div>
@@ -15,7 +17,7 @@ import { Icon } from '@iconify/vue';
           and intuitive user interfaces using Vue and Nuxt.
         </p>
         <p style="--stagger: 2" data-animate>
-          Open to <span style="color: white !important; font-weight: 700;">Work</span>.
+          Open to <span class="text-title" style="important; font-weight: 700;">Work</span>.
         </p>
         <p style="--stagger: 3" data-animate>
           I take immense pride in my ability to bring designs to life and create seamless web experiences that captivate
