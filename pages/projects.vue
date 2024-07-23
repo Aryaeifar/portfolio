@@ -45,7 +45,7 @@ const projects = ref([
   {
     img: "abdevali.png",
     title: t("abdevali"),
-    text: " The Abdevali Jewelry website serves a dual purpose as both a professional portfolio and an e-commerce platform. The  shop features product listings with descriptions, prices,  and images. Allows users to add products to a shopping  cart and proceed through a secure checkout process to  complete their purchases.",
+    text: t("abdevaliDesc"),
     link: "abdevali-tala.vercel.app",
     linkName: "Abdevali Jewelry",
     frontTech: [t("HTML"), t("JavaScript"), t("VUE"), t("NUXT")],
