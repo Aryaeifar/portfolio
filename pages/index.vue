@@ -13,66 +13,63 @@ import { Icon } from '@iconify/vue';
     <article>
       <div class="prose">
         <p style="--stagger: 1" data-animate>
-          I'm Ali aryaei, an enthusiastic Frontend Developer with a solid three years of experience in crafting dynamic
-          and intuitive user interfaces using Vue and Nuxt.
+         {{ $t('para-one') }}
         </p>
         <p style="--stagger: 2" data-animate>
-          Open to <span class="text-title" style="important; font-weight: 700;">Work</span>.
+         {{ $t("Open") }} <span class="text-title" style="font-weight: 700;">{{ $t('Work') }}</span>.
         </p>
         <p style="--stagger: 3" data-animate>
-          I take immense pride in my ability to bring designs to life and create seamless web experiences that captivate
-          users. From building interactive components to optimizing performance, my passion for frontend development
-          drives me to stay abreast of the latest technologies and best practices.
+          {{ $t("para-two") }}
         </p>
         <div style="--stagger: 4" data-animate>
-          Skills:
+          {{ $t("Skills") }}:
         <ul>
-          <li> JavaScript</li>
-          <li> HTML & CSS</li>
-          <li> VUE</li>
-          <li> NUXT</li>
-          <li> Bootstrap</li>
-          <li> VUETIFY</li>
-          <li> TAILWIND</li>
-          <li> GIT</li>
+          <li> {{ $t("JavaScript") }}</li>
+          <li> {{ $t("HTML") }}</li>
+          <li> {{ $t("VUE") }}</li>
+          <li> {{ $t("NUXT") }}</li>
+          <li> {{ $t("Bootstrap") }}</li>
+          <li> {{ $t("VUETIFY") }}</li>
+          <li> {{ $t("TAILWIND") }}</li>
+          <li> {{ $t("GIT") }}</li>
         </ul>
         </div>
        
         <p style="--stagger: 4" data-animate>
-          Let's connect and collaborate on exciting projects that push the boundaries of web development.
+          {{ $t("para-three") }}
         </p>
-        <p style="--stagger: 5" data-animate>Find me on</p>
+        <p style="--stagger: 5" data-animate>{{ $t("Find") }}</p>
         <p style="--stagger: 6" data-animate>
          <div class="d-flex">
           <nuxt-link href="https://github.com/Aryaeifar" target="_blank" >
             <span class="d-flex align-center text-decoration-underline me-2">
             <Icon icon="mdi:github" width="20" height="20" class="me-1"></Icon>
-            GitHub
+            {{ $t("GitHub") }}
           </span>
           </nuxt-link>
           <nuxt-link href="https://twitter.com/ali_aryaeifar" target="_blank" >
             <span class="d-flex align-center text-decoration-underline me-2">
             <Icon icon="ri:twitter-x-line" width="20" height="20" class="me-1"></Icon>
-            Twitter
+            {{ $t("Twitter") }}
           </span>
           </nuxt-link>
           <nuxt-link href="https://instagram.com/ali.aryaeifar?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" >
             <span class="d-flex align-center text-decoration-underline me-2">
             <Icon icon="ri:instagram-line" width="20" height="20" class="me-1"></Icon>
-            Instagram
+            {{ $t("Instagram") }}
           </span>
           </nuxt-link>
           <nuxt-link href="https://www.linkedin.com/in/ali-aryaeifar-a38b87195?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" >
             <span class="d-flex align-center text-decoration-underline me-2">
             <Icon icon="ph:linkedin-logo" width="20" height="20" class="me-1"></Icon>
-            Linkedin
+            {{ $t("Linkedin") }}
           </span>
           </nuxt-link>
           
          </div>
         </p>
         <p style="--stagger: 7" data-animate>
-          If you enjoy my works, Lets connect to each other 🤝
+          {{ $t("Connect") }} 🤝
         </p>
       </div>
     </article>

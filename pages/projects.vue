@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 useHead({
   title: "Projects - Ali arya",
   meta: [{ name: "description", content: "My amazing site." }],
@@ -6,47 +8,47 @@ useHead({
 const projects = ref([
   {
     img: "minagoo-thumbnail.png",
-    title: "Minagoo",
-    text: "Minagoo is an online English learning platform to Improve your language skills and it can be used for any age, level, and nationality. ",
+    title: t("Minagoo"),
+    text: t("minagooDesc"),
     link: "minagoo.ir",
     linkName: "minagoo.ir",
-    frontTech: ["HTML-CSS", "JavaScript", "VUE", "NUXT"],
+    frontTech: [t("HTML"), t("JavaScript"), t("VUE"), t("NUXT")],
     date: "Des 6, 2023",
   },
   {
     img: "menu2.png",
-    title: "Digital menu service",
-    text: " A restaurant cafe menu with a beautiful design and interesting features such as table reservation, choosing food from the menu ",
+    title: t("menu"),
+    text: (t("menuDesc")),
     link: " http://menuly.vip/flylounge",
     linkName: "menuly.vip/flylounge",
-    frontTech: ["HTML-CSS", "JavaScript", "VUE", "NUXT"],
+    frontTech: [t("HTML"), t("JavaScript"), t("VUE"), t("NUXT")],
     date: "Des 6, 2023",
   },
   {
     img: "shahrdari-main.png",
-    title: "137",
-    text: "  A system for municipalities with the possibility of  registering citizens' reports in the city and following up on reports and solving urban problems by managers ",
+    title: t("137"),
+    text:t("137Desc"),
     link: "http://kermanshah.137.demo.hemend.com/en",
     linkName: "http://kermanshah.137.demo.hemend.com/en",
-    frontTech: ["HTML-CSS", "JavaScript", "VUE", "NUXT"],
+    frontTech: [t("HTML"), t("JavaScript"), t("VUE"), t("NUXT")],
     date: "Des 6, 2023",
   },
   {
     img: "karkia.jpg",
-    title: "Karkia",
-    text: "  The Karkia Mattress website is designed to streamline the  mattress shopping experience by offering a robust platform    for browsing, learning about, and purchasing high-quality mattresses. It combines detailed product information,  customer support, and e-commerce functionality to meet theneeds of modern consumers.",
+    title: t("karkia"),
+    text: t("karkiaDesc"),
     link: "http://karkiamattress.com",
     linkName: "Karkia",
-    frontTech: ["HTML-CSS", "JavaScript"],
+    frontTech: [t("HTML"), t("JavaScript")],
     date: "July 20, 2024",
   },
   {
     img: "abdevali.png",
-    title: "Abdevali Jewelry",
+    title: t("abdevali"),
     text: " The Abdevali Jewelry website serves a dual purpose as both a professional portfolio and an e-commerce platform. The  shop features product listings with descriptions, prices,  and images. Allows users to add products to a shopping  cart and proceed through a secure checkout process to  complete their purchases.",
     link: "abdevali-tala.vercel.app",
     linkName: "Abdevali Jewelry",
-    frontTech: ["HTML-CSS", "JavaScript" , "VUE", "NUXT"],
+    frontTech: [t("HTML"), t("JavaScript"), t("VUE"), t("NUXT")],
     date: "July 20, 2024",
   },
 ]);
@@ -55,7 +57,7 @@ const projects = ref([
 <template>
   <div>
     <div class="prose mb-8">
-      <h1 class="text-h3 text-title">Projects</h1>
+      <h1 class="text-h3 text-title">{{ $t("projects") }}</h1>
     </div>
     <article>
       <div class="">

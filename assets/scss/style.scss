@@ -53,6 +53,12 @@ body.rtl {
   text-align: right;
   direction: rtl;
 }
+.rtl .v-card-text {
+  direction: rtl;
+}
+.rtl .v-locale--is-ltr {
+  direction: rtl;
+}
 .text-title {
     font-family: "Inter-Regular", "farsi-digit" !important;
 

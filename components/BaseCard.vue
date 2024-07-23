@@ -23,7 +23,7 @@ const props = defineProps({
       <v-card-text>
         <div>
         {{ items.text }}
-          <p class="mt-3">Front-end technologies:</p>
+          <p class="mt-3">{{ $t('tech') }}:</p>
           <ul class="mx-3 my-3">
             <li style="font-size: 12px" v-for="i in items.frontTech">
                 {{ i }}
