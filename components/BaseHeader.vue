@@ -33,20 +33,25 @@ const getLanguageLabel = (locale) => {
   }
 };
 
+const updateDirection = (newLocale) => {
+  document.documentElement.setAttribute('dir', newLocale === 'fa' ? 'rtl' : 'ltr');
+};
 
 function changeLanguage(newLocale) {
-  const newLabel = getLanguageLabel(newLocale);
   setLocale(newLocale);
   localStorage.setItem('preferred-lang', newLocale);
+  const newLabel = getLanguageLabel(newLocale);
   localStorage.setItem('preferred-lang-label', newLabel);
+  updateDirection(newLocale);
 }
 onMounted(() => {
   const savedLocale = localStorage.getItem('preferred-lang') || 'en';
-  // const savedLabel = localStorage.getItem('preferred-lang-label') || getLanguageLabel('en');
   setLocale(savedLocale);
-  // Use the savedLabel if you need to display it somewhere
+  updateDirection(savedLocale);
 });
-
+watch(() => locale.value, (newLocale) => {
+  updateDirection(newLocale);
+});
 </script>
 
 <template>

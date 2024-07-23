@@ -1,3 +1,13 @@
+:root {
+  --text-align: left;
+  --direction: ltr;
+}
+
+[dir="rtl"] {
+  --text-align: right;
+  --direction: rtl;
+}
+
 @font-face {
   font-family: "Inter-Regular";
   src: url("/assets/fonts/Inter-Regular.woff2");
@@ -24,7 +34,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  direction: ltr;
+  text-align: var(--text-align);
+  direction: var(--direction);
   font-size: 14px;
   font-weight: normal;
   font-family: "Inter-Regular", "farsi-digit";
