@@ -48,6 +48,11 @@ body {
     }
   }
 }
+
+body.rtl {
+  text-align: right;
+  direction: rtl;
+}
 .text-title {
     font-family: "Inter-Regular", "farsi-digit" !important;
 

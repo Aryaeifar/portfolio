@@ -33,8 +33,8 @@ const getLanguageLabel = (locale) => {
   }
 };
 
-const updateDirection = (newLocale) => {
-  document.documentElement.setAttribute('dir', newLocale === 'fa' ? 'rtl' : 'ltr');
+const updateDirectionClass = (newLocale) => {
+  document.body.classList.toggle('rtl', newLocale === 'fa');
 };
 
 function changeLanguage(newLocale) {
@@ -42,15 +42,15 @@ function changeLanguage(newLocale) {
   localStorage.setItem('preferred-lang', newLocale);
   const newLabel = getLanguageLabel(newLocale);
   localStorage.setItem('preferred-lang-label', newLabel);
-  updateDirection(newLocale);
+  updateDirectionClass(newLocale);
 }
 onMounted(() => {
   const savedLocale = localStorage.getItem('preferred-lang') || 'en';
   setLocale(savedLocale);
-  updateDirection(savedLocale);
+  updateDirectionClass(savedLocale);
 });
 watch(() => locale.value, (newLocale) => {
-  updateDirection(newLocale);
+  updateDirectionClass(newLocale);
 });
 </script>
 
