@@ -2,7 +2,10 @@
   font-family: "Inter-Regular";
   src: url("/assets/fonts/Inter-Regular.woff2");
 }
-
+@font-face {
+  font-family: "farsi-digit";
+  src: url("/assets/fonts/farsi-digit.woff2");
+}
 * {
   scrollbar-color: #111;
   box-sizing: border-box;
@@ -13,7 +16,7 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   line-height: 1.5;
-  font-family: "Inter-Regular";
+  font-family: "Inter-Regular", "farsi-digit";
   max-width: 100%;
 }
 
@@ -24,7 +27,7 @@ body {
   direction: ltr;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Inter-Regular";
+  font-family: "Inter-Regular", "farsi-digit";
   overflow-y: scroll;
   overflow-x: hidden;
   &.modal-open {
@@ -33,6 +36,10 @@ body {
       overflow-x: hidden;
     }
   }
+}
+.text-title {
+    font-family: "Inter-Regular", "farsi-digit" !important;
+
 }
 .mask-image {
     z-index: -1;

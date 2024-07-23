@@ -1,8 +1,13 @@
 <script setup>
 import { useTheme } from "vuetify";
 import { Icon } from "@iconify/vue";
-const theme = useTheme();
+const { locale, setLocale } = useI18n();
+const isEnglish = ref(true);
+const isPersian = ref(false);
 
+// THEME
+
+const theme = useTheme();
 function toggleTheme() {
   const newTheme = theme.global.current.value.dark ? "light" : "dark";
   theme.global.name.value = newTheme;
@@ -15,6 +20,33 @@ onMounted(() => {
     theme.global.name.value = savedTheme;
   }
 });
+
+// TRANSLATE
+
+const getLanguageLabel = (locale) => {
+  switch (locale) {
+    case 'fa':
+      return 'FA';
+    case 'en':
+    default:
+      return 'EN';
+  }
+};
+
+
+function changeLanguage(newLocale) {
+  const newLabel = getLanguageLabel(newLocale);
+  setLocale(newLocale);
+  localStorage.setItem('preferred-lang', newLocale);
+  localStorage.setItem('preferred-lang-label', newLabel);
+}
+onMounted(() => {
+  const savedLocale = localStorage.getItem('preferred-lang') || 'en';
+  // const savedLabel = localStorage.getItem('preferred-lang-label') || getLanguageLabel('en');
+  setLocale(savedLocale);
+  // Use the savedLabel if you need to display it somewhere
+});
+
 </script>
 
 <template>
@@ -26,14 +58,11 @@ onMounted(() => {
     <div class="nav">
       <ul class="d-flex">
         <li class="nav-item mx-2">
-          <nuxt-link to="/" class="nav-link text-primary"> Me </nuxt-link>
+          <nuxt-link to="/" class="nav-link text-primary"> {{ $t('me') }} </nuxt-link>
         </li>
-        <!-- <li class="nav-item mx-2">
-          <nuxt-link to="/blog" class="nav-link text-primary"> Blog </nuxt-link>
-        </li> -->
         <li class="nav-item mx-2">
           <nuxt-link to="/projects" class="nav-link text-primary"
-            >Projects</nuxt-link
+            >{{ $t('Projects') }}</nuxt-link
           >
         </li>
         <li class="nav-item mx-2">
@@ -54,20 +83,45 @@ onMounted(() => {
             <Icon icon="ri:github-fill" />
           </nuxt-link>
         </li>
+        <li
+          class="nav-item mx-3 text-primary"
+          @click="toggleLang"
+          style="font-size: 14px; cursor: pointer"
+          role="button"
+        >
+          <div style="position: relative">
+            <Transition name="slide-up">
+              <div
+                v-if="locale === 'en'"
+                style="position: absolute; top: 0px; left: -9px"
+                @click="changeLanguage('fa')"
+              >
+                EN
+              </div>
+              <div
+                v-else-if="locale === 'fa'"
+                style="position: absolute; top: 0px; left: -9px"
+                @click="changeLanguage('en')"
+              >
+                FA
+              </div>
+            </Transition>
+          </div>
+        </li>
         <li class="nav-item mx-2 text-primary" style="cursor: pointer">
-          <div style="position: relative;">
+          <div style="position: relative">
             <Transition name="slide-up">
               <Icon
                 v-if="theme.global.name.value == 'light'"
                 icon="ri:sun-line"
                 @click="toggleTheme"
-                style="position: absolute; top: 2px;"
+                style="position: absolute; top: 2px"
               />
               <Icon
                 v-else-if="theme.global.name.value == 'dark'"
                 icon="ri:moon-fill"
                 @click="toggleTheme"
-                style="position: absolute; top: 2px;"
+                style="position: absolute; top: 2px"
               />
             </Transition>
           </div>

@@ -8,7 +8,7 @@ import { Icon } from '@iconify/vue';
   <div>
    
     <div class="prose mb-8">
-      <h1 class="text-h3 text-title">Ali Aryaeifar</h1>
+      <h1 class="text-h3 text-title">{{ $t('name') }}</h1>
     </div>
     <article>
       <div class="prose">

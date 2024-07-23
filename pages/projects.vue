@@ -14,7 +14,7 @@ const projects = ref([
     date: "Des 6, 2023",
   },
   {
-    img: "flylounge-menu.png",
+    img: "menu2.png",
     title: "Digital menu service",
     text: " A restaurant cafe menu with a beautiful design and interesting features such as table reservation, choosing food from the menu ",
     link: " http://menuly.vip/flylounge",
