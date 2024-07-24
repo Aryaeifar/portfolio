@@ -253,7 +253,7 @@ const projects = ref([
               </ul>
             </div>
             <div>
-              <a href="abdevali-tala.vercel.app" target="_blank">Abdevali Jewelry</a>
+              <a href="https://abdevali-tala.vercel.app" target="_blank">Abdevali Jewelry</a>
             </div>
           </v-card-text>
           <v-card-item>
