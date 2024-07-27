@@ -91,7 +91,7 @@ const projects = ref([
               </ul>
             </div>
             <div>
-              <a href="minagoo.ir" target="_blank">minagoo.ir</a>
+              <a href="https://minagoo.ir/" target="_blank">minagoo.ir</a>
             </div>
           </v-card-text>
           <v-card-item>
