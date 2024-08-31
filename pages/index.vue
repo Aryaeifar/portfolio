@@ -15,9 +15,9 @@ import { Icon } from '@iconify/vue';
         <p style="--stagger: 1" data-animate>
          {{ $t('para-one') }}
         </p>
-        <p style="--stagger: 2" data-animate>
+        <!-- <p style="--stagger: 2" data-animate>
          {{ $t("Open") }} <span class="text-title" style="font-weight: 700;">{{ $t('Work') }}</span>.
-        </p>
+        </p> -->
         <p style="--stagger: 3" data-animate>
           {{ $t("para-two") }}
         </p>
