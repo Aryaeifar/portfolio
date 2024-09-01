@@ -1,11 +1,11 @@
-import enLanguage from "./locales/en.json";
-import faLanguage from './locales/fa.json'
+import enLang from "./locales/en.json";
+import faLang from './locales/fa.json'
 export default defineI18nConfig(() => ({
   legacy: false,
   locale: "en",
   messages: {
-    en: enLanguage,
-    fa: faLanguage,
+    en: enLang,
+    fa: faLang,
   },
 }));
 
