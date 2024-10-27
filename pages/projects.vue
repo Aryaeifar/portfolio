@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { useI18n } from "vue-i18n";
-definePageMeta({
-  middleware: 'check'
-})
+// definePageMeta({
+//   middleware: 'check'
+// })
 const { t } = useI18n();
 useHead({
   title: "Projects - Ali arya",
