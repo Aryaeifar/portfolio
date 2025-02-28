@@ -12,7 +12,7 @@ const props = defineProps({
       <v-img
         cover
         height="250"
-        :src="'/assets/images/' + items.img"
+        :src="'/images/' + items.img"
         class="ma-3 rounded basecard-img"
       ></v-img>
 

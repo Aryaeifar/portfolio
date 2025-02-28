@@ -278,7 +278,7 @@ const addTask = () => {
                       </ul>
                     </div>
                     <div>
-                      <a href="https://abdevali-tala.vercel.app" target="_blank"
+                      <a href="https://abdevali.com" target="_blank"
                         >Abdevali Jewelry</a
                       >
                     </div>
@@ -287,6 +287,49 @@ const addTask = () => {
                     <v-card-subtitle>
                       <div>
                         <span class="me-1">July 20, 2024</span>
+                      </div>
+                    </v-card-subtitle>
+                  </v-card-item>
+                </v-card>
+              </div>
+            </v-col>
+
+             <!-- Card 6 -->
+             <v-col cols="12" sm="6" lg="4">
+              <div class="h-100">
+                <v-card class="mx-auto projects-card h-100" max-width="374">
+                  <v-img
+                    cover
+                    height="250"
+                    src="/assets/images/khadamati.png"
+                    class="ma-3 rounded basecard-img"
+                  ></v-img>
+
+                  <v-card-item>
+                    <v-card-title>{{ $t("khadamati") }}</v-card-title>
+                  </v-card-item>
+
+                  <v-card-text>
+                    <div>
+                      {{ $t("khadamatiDesc") }}
+                      <p class="mt-3">{{ $t("tech") }}:</p>
+                      <ul class="mx-3 my-3">
+                        <li style="font-size: 12px">{{ $t("HTML") }}</li>
+                        <li style="font-size: 12px">{{ $t("JavaScript") }}</li>
+                        <li style="font-size: 12px">{{ $t("VUE") }}</li>
+                        <li style="font-size: 12px">{{ $t("NUXT") }}</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <a href="https://khadamati.io" target="_blank"
+                        >Khadamati super application</a
+                      >
+                    </div>
+                  </v-card-text>
+                  <v-card-item>
+                    <v-card-subtitle>
+                      <div>
+                        <span class="me-1">Feb 28, 2025</span>
                       </div>
                     </v-card-subtitle>
                   </v-card-item>

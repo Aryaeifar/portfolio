@@ -28,7 +28,7 @@ const activeDesc = ref(true);
       <div class="">
         <Carousel :items-to-show="2" :wrap-around="false">
           <Slide v-for="slide in item" :key="slide">
-               <v-img aspect-ratio="4/3" class="rounded-xl" :src="'/assets/images/' + slide.img" cover height="300"></v-img>
+               <v-img aspect-ratio="4/3" class="rounded-xl" :src="'/images/' + slide.img" cover height="300"></v-img>
           </Slide>
           <template #addons>
             <Navigation />
