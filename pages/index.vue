@@ -31,6 +31,7 @@ import { Icon } from '@iconify/vue';
           <li> {{ $t("Bootstrap") }}</li>
           <li> {{ $t("VUETIFY") }}</li>
           <li> {{ $t("TAILWIND") }}</li>
+          <li> {{ $t("SHADCN") }}</li>
           <li> {{ $t("GIT") }}</li>
         </ul>
         </div>
