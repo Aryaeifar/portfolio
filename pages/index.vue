@@ -26,6 +26,7 @@ import { Icon } from '@iconify/vue';
         <ul>
           <li> {{ $t("JavaScript") }}</li>
           <li> {{ $t("HTML") }}</li>
+          <li> {{ $t("SCSS") }}</li>
           <li> {{ $t("VUE") }}</li>
           <li> {{ $t("NUXT") }}</li>
           <li> {{ $t("Bootstrap") }}</li>
