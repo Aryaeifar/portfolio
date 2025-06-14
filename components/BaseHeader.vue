@@ -72,7 +72,7 @@ watch(() => locale.value, (newLocale) => {
         </li>
         <li class="nav-item mx-2">
           <nuxt-link to="/playground" class="nav-link text-primary"
-            >{{ $t('playground') }}</nuxt-link
+            >{{ $t('Playground') }}</nuxt-link
           >
         </li>
         <li class="nav-item mx-2">

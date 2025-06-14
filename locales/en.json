@@ -16,6 +16,7 @@
   "Bootstrap": "BOOTSTRAP",
   "VUETIFY": "VUETIFY",
   "TAILWIND": "TAILWIND",
+  "SHADCN":"SHADCN",
   "GIT": "GIT",
   "para-three": "Let's connect and collaborate on exciting projects that push the boundaries of web development.",
   "Find": "Find me on",
@@ -37,5 +38,9 @@
   "abdevali": "Abdevali Jewelry",
   "abdevaliDesc": "The Abdevali Jewelry website serves a dual purpose as both a professional portfolio and an e-commerce platform. The  shop features product listings with descriptions, prices,  and images. Allows users to add products to a shopping  cart and proceed through a secure checkout process to  complete their purchases.",
   "khadamati": "Khadamati Super Application",
-  "khadamatiDesc": "A super service application to do all the different things in one app and quickly."
+  "khadamatiDesc": "A super service application to do all the different things in one app and quickly.",
+  "Playground":"Playground",
+  "polygon-drawer-desc":"A Vue 3 component for drawing, editing polygons on an image",
+  "video-desc":"A minimal video player that supports .srt  and visual cue markers",
+  "english-digit-desc":"A Vue 3 directive that automatically converts Persian to english"
 }

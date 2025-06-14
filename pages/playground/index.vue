@@ -31,7 +31,7 @@ useHead({
                 <div data-v-8cb24504="" class="d-flex flex-column">
                   <div data-v-8cb24504="" class="title">Vue Polygon Drawer</div>
                   <div data-v-8cb24504="" class="desc">
-                    A Vue 3 component for drawing, editing polygons on an image.
+                    {{ $t('polygon-drawer-desc') }}
                   </div>
                 </div>
               </NuxtLink>
@@ -49,7 +49,7 @@ useHead({
                 <div data-v-8cb24504="" class="d-flex flex-column">
                   <div data-v-8cb24504="" class="title">vue-video-subtitle-sync</div>
                   <div data-v-8cb24504="" class="desc">
-                    A minimal, dependency-free Vue 3 video player that supports .srt subtitles and visual cue markers.
+                    {{ $t('video-desc') }}
                   </div>
                 </div>
               </NuxtLink>
@@ -67,7 +67,7 @@ useHead({
                 <div data-v-8cb24504="" class="d-flex flex-column">
                   <div data-v-8cb24504="" class="title">v-english-number</div>
                   <div data-v-8cb24504="" class="desc">
-                    A  Vue 3 directive that automatically converts Persian to english
+                    {{ $t('english-digit-desc') }}
                   </div>
                 </div>
               </NuxtLink>
@@ -99,6 +99,8 @@ useHead({
 .item-icon {
   padding-top: 0.5rem;
   padding-right: 1.25rem;
+  padding-left: 1.25rem;
+
   opacity: 0.5;
   font-size: 1.875rem;
   line-height: 2.25rem;
