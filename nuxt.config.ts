@@ -12,6 +12,22 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-8",
       title: "Aryaeifar",
+      link: [
+        { 
+          rel: 'icon', 
+          type: 'image/png', 
+          href: '/favicon.png'
+        },
+        { 
+          rel: 'icon', 
+          type: 'image/svg+xml', 
+          href: '/favicon.svg' 
+        },
+        { 
+          rel: 'apple-touch-icon', 
+          href: '/favicon.png' 
+        }
+      ]
     },
   },
   css: [

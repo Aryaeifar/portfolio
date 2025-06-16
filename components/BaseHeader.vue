@@ -57,8 +57,9 @@ watch(() => locale.value, (newLocale) => {
 <template>
   <div class="header d-flex justify-space-between align-center">
     <div>
-      <span class="mdi mdi-vuejs text-h5"></span>
-      <span class="mdi mdi-nuxt text-h5"></span>
+      <WidgetsAnimatedLogo />
+      <!-- <span class="mdi mdi-vuejs text-h5"></span>
+      <span class="mdi mdi-nuxt text-h5"></span> -->
     </div>
     <div class="nav">
       <ul class="d-flex">
