@@ -55,6 +55,15 @@ const projects = ref([
     frontTech: [t("HTML"), t("JavaScript"), t("VUE"), t("NUXT")],
     date: "July 20, 2024",
   },
+  {
+    img: "abdevali.png",
+    title: t("b2b"),
+    text: t("b2bDesc"),
+    link: "b2b.app",
+    linkName: "B2B meeting",
+    frontTech: [t("HTML"), t("JavaScript"), t("VUE"), t("NUXT")],
+    date: "Dec 15, 2025",
+  },
 ]);
 const newTask = ref('')
 const {tasksList, addTodo} = useTodo()
@@ -330,6 +339,48 @@ const addTask = () => {
                     <v-card-subtitle>
                       <div>
                         <span class="me-1">Feb 28, 2025</span>
+                      </div>
+                    </v-card-subtitle>
+                  </v-card-item>
+                </v-card>
+              </div>
+            </v-col>
+
+              <v-col cols="12" sm="6" lg="4">
+              <div class="h-100">
+                <v-card class="mx-auto projects-card h-100" max-width="374">
+                  <v-img
+                    cover
+                    height="250"
+                    src="/assets/images/b2b.png"
+                    class="ma-3 rounded basecard-img"
+                  ></v-img>
+
+                  <v-card-item>
+                    <v-card-title>{{ $t("b2b") }}</v-card-title>
+                  </v-card-item>
+
+                  <v-card-text>
+                    <div>
+                      {{ $t("b2bdesc") }}
+                      <p class="mt-3">{{ $t("tech") }}:</p>
+                      <ul class="mx-3 my-3">
+                        <li style="font-size: 12px">{{ $t("HTML") }}</li>
+                        <li style="font-size: 12px">{{ $t("JavaScript") }}</li>
+                        <li style="font-size: 12px">{{ $t("VUE") }}</li>
+                        <li style="font-size: 12px">{{ $t("NUXT") }}</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <a href="https://khadamati.io" target="_blank"
+                        >B2b Online Meeting sesions</a
+                      >
+                    </div>
+                  </v-card-text>
+                  <v-card-item>
+                    <v-card-subtitle>
+                      <div>
+                        <span class="me-1">Des 15, 2025</span>
                       </div>
                     </v-card-subtitle>
                   </v-card-item>

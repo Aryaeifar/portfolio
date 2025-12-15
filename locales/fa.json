@@ -42,7 +42,9 @@
   "Playground":"زمین بازی",
   "polygon-drawer-desc":"A Vue 3 component for drawing, editing polygons on an image",
   "video-desc":"A minimal video player that supports .srt subtitles and visual cue markers",
-  "english-digit-desc":"A Vue 3 directive that automatically converts Persian to english"
+  "english-digit-desc":"A Vue 3 directive that automatically converts Persian to english",
+  "b2b":"B2B meeting",
+  "b2bdesc":"امکان رزرو، مدیریت و زمان‌بندی جلسات را به‌صورت آنلاین فراهم می‌کند. کاربران می‌توانند زمان‌های آزاد را مشاهده کرده و جلسه موردنظر خود را رزرو کنند. تمرکز اصلی پروژه بر تجربه کاربری روان، معماری تمیز و عملکرد بالا بوده است."
 
 
 }

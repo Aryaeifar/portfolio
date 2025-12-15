@@ -42,5 +42,8 @@
   "Playground":"Playground",
   "polygon-drawer-desc":"A Vue 3 component for drawing, editing polygons on an image",
   "video-desc":"A minimal video player that supports .srt  and visual cue markers",
-  "english-digit-desc":"A Vue 3 directive that automatically converts Persian to english"
+  "english-digit-desc":"A Vue 3 directive that automatically converts Persian to english",
+  
+  "b2b": "B2B Meeting",
+  "b2bdesc": "Provides an online solution for booking, managing, and scheduling meetings. Users can view available time slots and reserve their desired meetings. The project focuses on a smooth user experience, clean architecture, and high performance."
 }
