@@ -29,6 +29,8 @@ const { t } = useI18n();
           <li> {{ $t("JavaScript") }}</li>
           <li> {{ $t("HTML") }}</li>
           <li> {{ $t("SCSS") }}</li>
+          <li> {{ $t("REACT") }}</li>
+          <li> {{ $t("NEXT.JS") }}</li>
           <li> {{ $t("VUE") }}</li>
           <li> {{ $t("NUXT") }}</li>
           <li> {{ $t("Bootstrap") }}</li>
