@@ -44,8 +44,21 @@ const { t } = useI18n();
         <p style="--stagger: 4" data-animate>
           {{ $t("para-three") }}
         </p>
-        <p style="--stagger: 5" data-animate>{{ $t("Find") }}</p>
-        <p style="--stagger: 6" data-animate>
+        <div style="--stagger: 5" data-animate>
+          <p class="text-title" style="font-weight: 700;">{{ $t("resume-title") }}</p>
+          <p>{{ $t("resume-desc") }}</p>
+          <a
+            href="/assets/Ali-Aryaeifar-Resume.pdf"
+            download="Ali-Aryaeifar-Resume.pdf"
+          >
+            <span class="d-flex align-center text-decoration-underline">
+              <Icon icon="mdi:file-download-outline" width="20" height="20" class="me-1"></Icon>
+              {{ $t("resume-download") }}
+            </span>
+          </a>
+        </div>
+        <p style="--stagger: 6" data-animate>{{ $t("Find") }}</p>
+        <p style="--stagger: 7" data-animate>
          <div class="d-flex">
           <nuxt-link href="https://github.com/Aryaeifar" target="_blank" >
             <span class="d-flex align-center text-decoration-underline me-2">
@@ -74,7 +87,7 @@ const { t } = useI18n();
           
          </div>
         </p>
-        <p style="--stagger: 7" data-animate>
+        <p style="--stagger: 8" data-animate>
           {{ $t("Connect") }} 🤝
         </p>
       </div>
