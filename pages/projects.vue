@@ -38,7 +38,7 @@ const projects = ref([
     date: "Des 6, 2023",
   },
   {
-    img: "karkia.jpg",
+    img: "karkia-cover.jpg",
     title: t("karkia"),
     text: t("karkiaDesc"),
     link: "http://karkiamattress.com",
@@ -47,7 +47,7 @@ const projects = ref([
     date: "July 20, 2024",
   },
   {
-    img: "abdevali.png",
+    img: "abdevali.jpg",
     title: t("abdevali"),
     text: t("abdevaliDesc"),
     link: "abdevali-tala.vercel.app",
@@ -183,7 +183,7 @@ const addTask = () => {
             <v-col cols="12" sm="6" lg="4">
               <div class="h-100">
                 <v-card class="mx-auto projects-card h-100" max-width="374">
-                  <v-img cover height="250" src="/assets/images/karkia.jpg" class="ma-3 rounded basecard-img"></v-img>
+                  <v-img cover height="250" src="/assets/images/karkia-cover.jpg" class="ma-3 rounded basecard-img"></v-img>
 
                   <v-card-item>
                     <v-card-title>{{ $t("karkia") }}</v-card-title>
@@ -217,7 +217,7 @@ const addTask = () => {
             <v-col cols="12" sm="6" lg="4">
               <div class="h-100">
                 <v-card class="mx-auto projects-card h-100" max-width="374">
-                  <v-img cover height="250" src="/assets/images/abdevali.png" class="ma-3 rounded basecard-img"></v-img>
+                  <v-img cover height="250" src="/assets/images/abdevali.jpg" class="ma-3 rounded basecard-img"></v-img>
 
                   <v-card-item>
                     <v-card-title>{{ $t("abdevali") }}</v-card-title>
