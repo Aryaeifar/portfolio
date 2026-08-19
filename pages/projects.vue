@@ -11,7 +11,7 @@ useHead({
 
 const projects = ref([
   {
-    img: "minagoo-thumbnail.png",
+    img: "minagoo.jpg",
     title: t("Minagoo"),
     text: t("minagooDesc"),
     link: "minagoo.ir",
@@ -20,7 +20,7 @@ const projects = ref([
     date: "Des 6, 2023",
   },
   {
-    img: "menu2.png",
+    img: "digital-menu.jpg",
     title: t("menu"),
     text: t("menuDesc"),
     link: " http://menuly.vip/flylounge",
@@ -29,7 +29,7 @@ const projects = ref([
     date: "Des 6, 2023",
   },
   {
-    img: "shahrdari-main.png",
+    img: "137.jpg",
     title: t("137"),
     text: t("137Desc"),
     link: "http://kermanshah.137.demo.hemend.com/en",
@@ -56,7 +56,7 @@ const projects = ref([
     date: "July 20, 2024",
   },
   {
-    img: "abdevali.png",
+    img: "b2b.jpg",
     title: t("b2b"),
     text: t("b2bDesc"),
     link: "b2b.app",
@@ -64,16 +64,34 @@ const projects = ref([
     frontTech: [t("HTML"), t("JavaScript"), t("VUE"), t("NUXT")],
     date: "Dec 15, 2025",
   },
+  {
+    img: "learning-next.jpg",
+    title: t("learningNext"),
+    text: t("learningNextDesc"),
+    link: "https://t-learning.net",
+    linkName: "t-learning.net",
+    frontTech: [t("HTML"), t("JavaScript"), t("REACT"), t("NEXT.JS")],
+    date: "Aug 19, 2026",
+  },
+  {
+    img: "majara.jpg",
+    title: t("majara"),
+    text: t("majaraDesc"),
+    link: "https://majara.io",
+    linkName: "majara.io",
+    frontTech: [t("HTML"), t("JavaScript"), t("VUE2"), t("NUXT2")],
+    date: "2024",
+  },
 ]);
 const newTask = ref('')
-const {tasksList, addTodo} = useTodo()
+const { tasksList, addTodo } = useTodo()
 const addTask = () => {
-  if(newTask.value == '' || !newTask.value) {
+  if (newTask.value == '' || !newTask.value) {
     alert('پر کنید')
   } else {
     addTodo({
-      id:tasksList.value.length + 1,
-      text:newTask.value
+      id: tasksList.value.length + 1,
+      text: newTask.value
     })
   }
 }
@@ -88,147 +106,84 @@ const addTask = () => {
       <div class="">
         <v-container>
           <v-row>
-            <!-- Card 1 -->
+            <!-- Card 8 -->
             <v-col cols="12" sm="6" lg="4">
               <div class="h-100">
                 <v-card class="mx-auto projects-card h-100" max-width="374">
-                  <v-img
-                    cover
-                    height="250"
-                    src="/assets/images/minagoo-thumbnail.png"
-                    class="ma-3 rounded basecard-img"
-                  ></v-img>
+                  <v-img cover height="250" src="/assets/images/learning-next.jpg"
+                    class="ma-3 rounded basecard-img"></v-img>
 
                   <v-card-item>
-                    <v-card-title>{{ $t("Minagoo") }}</v-card-title>
+                    <v-card-title>{{ $t("learningNext") }}</v-card-title>
                   </v-card-item>
 
                   <v-card-text>
                     <div>
-                      {{ $t("minagooDesc") }}
+                      {{ $t("learningNextDesc") }}
                       <p class="mt-3">{{ $t("tech") }}:</p>
                       <ul class="mx-3 my-3">
                         <li style="font-size: 12px">{{ $t("HTML") }}</li>
                         <li style="font-size: 12px">{{ $t("JavaScript") }}</li>
-                        <li style="font-size: 12px">{{ $t("VUE") }}</li>
-                        <li style="font-size: 12px">{{ $t("NUXT") }}</li>
+                        <li style="font-size: 12px">{{ $t("REACT") }}</li>
+                        <li style="font-size: 12px">{{ $t("NEXT.JS") }}</li>
                       </ul>
                     </div>
                     <div>
-                      <a href="https://minagoo.ir/" target="_blank"
-                        >minagoo.ir</a
-                      >
+                      <a href="https://t-learning.net" target="_blank">t-learning.net</a>
+                    </div>
+                  </v-card-text>
+                  <v-card-item>
+                    <v-card-subtitle>
+                    <div>
+                      <span class="me-1">Aug 19, 2026</span>
+                    </div>
+                  </v-card-subtitle>
+                </v-card-item>
+              </v-card>
+            </div>
+          </v-col>
+
+            <!-- Majara -->
+            <v-col cols="12" sm="6" lg="4">
+              <div class="h-100">
+                <v-card class="mx-auto projects-card h-100" max-width="374">
+                  <v-img cover height="250" src="/assets/images/majara.jpg"
+                    class="ma-3 rounded basecard-img"></v-img>
+
+                  <v-card-item>
+                    <v-card-title>{{ $t("majara") }}</v-card-title>
+                  </v-card-item>
+
+                  <v-card-text>
+                    <div>
+                      {{ $t("majaraDesc") }}
+                      <p class="mt-3">{{ $t("tech") }}:</p>
+                      <ul class="mx-3 my-3">
+                        <li style="font-size: 12px">{{ $t("HTML") }}</li>
+                        <li style="font-size: 12px">{{ $t("JavaScript") }}</li>
+                        <li style="font-size: 12px">{{ $t("VUE2") }}</li>
+                        <li style="font-size: 12px">{{ $t("NUXT2") }}</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <a href="https://majara.io" target="_blank">majara.io</a>
                     </div>
                   </v-card-text>
                   <v-card-item>
                     <v-card-subtitle>
                       <div>
-                        <span class="me-1">Des 6, 2023</span>
+                        <span class="me-1">2024</span>
                       </div>
                     </v-card-subtitle>
                   </v-card-item>
                 </v-card>
               </div>
             </v-col>
-
-            <!-- Card 2 -->
-            <v-col cols="12" sm="6" lg="4">
-              <div class="h-100">
-                <v-card class="mx-auto projects-card h-100" max-width="374">
-                  <v-img
-                    cover
-                    height="250"
-                    src="/assets/images/menu2.png"
-                    class="ma-3 rounded basecard-img"
-                  ></v-img>
-
-                  <v-card-item>
-                    <v-card-title>{{ $t("menu") }}</v-card-title>
-                  </v-card-item>
-
-                  <v-card-text>
-                    <div>
-                      {{ $t("menuDesc") }}
-                      <p class="mt-3">{{ $t("tech") }}:</p>
-                      <ul class="mx-3 my-3">
-                        <li style="font-size: 12px">{{ $t("HTML") }}</li>
-                        <li style="font-size: 12px">{{ $t("JavaScript") }}</li>
-                        <li style="font-size: 12px">{{ $t("VUE") }}</li>
-                        <li style="font-size: 12px">{{ $t("NUXT") }}</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <a href="http://menuly.vip/flylounge" target="_blank"
-                        >menuly.vip/flylounge</a
-                      >
-                    </div>
-                  </v-card-text>
-                  <v-card-item>
-                    <v-card-subtitle>
-                      <div>
-                        <span class="me-1">Des 6, 2023</span>
-                      </div>
-                    </v-card-subtitle>
-                  </v-card-item>
-                </v-card>
-              </div>
-            </v-col>
-
-            <!-- Card 3 -->
-            <v-col cols="12" sm="6" lg="4">
-              <div class="h-100">
-                <v-card class="mx-auto projects-card h-100" max-width="374">
-                  <v-img
-                    cover
-                    height="250"
-                    src="/assets/images/shahrdari-main.png"
-                    class="ma-3 rounded basecard-img"
-                  ></v-img>
-
-                  <v-card-item>
-                    <v-card-title>{{ $t("137") }}</v-card-title>
-                  </v-card-item>
-
-                  <v-card-text>
-                    <div>
-                      {{ $t("137Desc") }}
-                      <p class="mt-3">{{ $t("tech") }}:</p>
-                      <ul class="mx-3 my-3">
-                        <li style="font-size: 12px">{{ $t("HTML") }}</li>
-                        <li style="font-size: 12px">{{ $t("JavaScript") }}</li>
-                        <li style="font-size: 12px">{{ $t("VUE") }}</li>
-                        <li style="font-size: 12px">{{ $t("NUXT") }}</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <a
-                        href="http://kermanshah.137.demo.hemend.com/en"
-                        target="_blank"
-                        >http://kermanshah.137.demo.hemend.com/en</a
-                      >
-                    </div>
-                  </v-card-text>
-                  <v-card-item>
-                    <v-card-subtitle>
-                      <div>
-                        <span class="me-1">Des 6, 2023</span>
-                      </div>
-                    </v-card-subtitle>
-                  </v-card-item>
-                </v-card>
-              </div>
-            </v-col>
-
             <!-- Card 4 -->
             <v-col cols="12" sm="6" lg="4">
               <div class="h-100">
                 <v-card class="mx-auto projects-card h-100" max-width="374">
-                  <v-img
-                    cover
-                    height="250"
-                    src="/assets/images/karkia.jpg"
-                    class="ma-3 rounded basecard-img"
-                  ></v-img>
+                  <v-img cover height="250" src="/assets/images/karkia.jpg" class="ma-3 rounded basecard-img"></v-img>
 
                   <v-card-item>
                     <v-card-title>{{ $t("karkia") }}</v-card-title>
@@ -244,9 +199,7 @@ const addTask = () => {
                       </ul>
                     </div>
                     <div>
-                      <a href="http://karkiamattress.com" target="_blank"
-                        >Karkia</a
-                      >
+                      <a href="http://karkiamattress.com" target="_blank">Karkia</a>
                     </div>
                   </v-card-text>
                   <v-card-item>
@@ -264,12 +217,7 @@ const addTask = () => {
             <v-col cols="12" sm="6" lg="4">
               <div class="h-100">
                 <v-card class="mx-auto projects-card h-100" max-width="374">
-                  <v-img
-                    cover
-                    height="250"
-                    src="/assets/images/abdevali.png"
-                    class="ma-3 rounded basecard-img"
-                  ></v-img>
+                  <v-img cover height="250" src="/assets/images/abdevali.png" class="ma-3 rounded basecard-img"></v-img>
 
                   <v-card-item>
                     <v-card-title>{{ $t("abdevali") }}</v-card-title>
@@ -287,9 +235,7 @@ const addTask = () => {
                       </ul>
                     </div>
                     <div>
-                      <a href="https://abdevali.com" target="_blank"
-                        >Abdevali Jewelry</a
-                      >
+                      <a href="https://abdevali.com" target="_blank">Abdevali Jewelry</a>
                     </div>
                   </v-card-text>
                   <v-card-item>
@@ -302,17 +248,126 @@ const addTask = () => {
                 </v-card>
               </div>
             </v-col>
-
-             <!-- Card 6 -->
-             <v-col cols="12" sm="6" lg="4">
+            <!-- Card 1 -->
+            <v-col cols="12" sm="6" lg="4">
               <div class="h-100">
                 <v-card class="mx-auto projects-card h-100" max-width="374">
-                  <v-img
-                    cover
-                    height="250"
-                    src="/assets/images/khadamati.png"
-                    class="ma-3 rounded basecard-img"
-                  ></v-img>
+                  <v-img cover height="250" src="/assets/images/minagoo.jpg"
+                    class="ma-3 rounded basecard-img"></v-img>
+
+                  <v-card-item>
+                    <v-card-title>{{ $t("Minagoo") }}</v-card-title>
+                  </v-card-item>
+
+                  <v-card-text>
+                    <div>
+                      {{ $t("minagooDesc") }}
+                      <p class="mt-3">{{ $t("tech") }}:</p>
+                      <ul class="mx-3 my-3">
+                        <li style="font-size: 12px">{{ $t("HTML") }}</li>
+                        <li style="font-size: 12px">{{ $t("JavaScript") }}</li>
+                        <li style="font-size: 12px">{{ $t("VUE") }}</li>
+                        <li style="font-size: 12px">{{ $t("NUXT") }}</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <a href="https://minagoo.ir/" target="_blank">minagoo.ir</a>
+                    </div>
+                  </v-card-text>
+                  <v-card-item>
+                    <v-card-subtitle>
+                      <div>
+                        <span class="me-1">Des 6, 2023</span>
+                      </div>
+                    </v-card-subtitle>
+                  </v-card-item>
+                </v-card>
+              </div>
+            </v-col>
+
+            <!-- Card 2 -->
+            <v-col cols="12" sm="6" lg="4">
+              <div class="h-100">
+                <v-card class="mx-auto projects-card h-100" max-width="374">
+                  <v-img cover height="250" src="/assets/images/digital-menu.jpg"
+                    class="ma-3 rounded basecard-img"></v-img>
+
+                  <v-card-item>
+                    <v-card-title>{{ $t("menu") }}</v-card-title>
+                  </v-card-item>
+
+                  <v-card-text>
+                    <div>
+                      {{ $t("menuDesc") }}
+                      <p class="mt-3">{{ $t("tech") }}:</p>
+                      <ul class="mx-3 my-3">
+                        <li style="font-size: 12px">{{ $t("HTML") }}</li>
+                        <li style="font-size: 12px">{{ $t("JavaScript") }}</li>
+                        <li style="font-size: 12px">{{ $t("VUE") }}</li>
+                        <li style="font-size: 12px">{{ $t("NUXT") }}</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <a href="http://menuly.vip/flylounge" target="_blank">menuly.vip/flylounge</a>
+                    </div>
+                  </v-card-text>
+                  <v-card-item>
+                    <v-card-subtitle>
+                      <div>
+                        <span class="me-1">Des 6, 2023</span>
+                      </div>
+                    </v-card-subtitle>
+                  </v-card-item>
+                </v-card>
+              </div>
+            </v-col>
+
+            <!-- Card 3 -->
+            <v-col cols="12" sm="6" lg="4">
+              <div class="h-100">
+                <v-card class="mx-auto projects-card h-100" max-width="374">
+                  <v-img cover height="250" src="/assets/images/137.jpg"
+                    class="ma-3 rounded basecard-img"></v-img>
+
+                  <v-card-item>
+                    <v-card-title>{{ $t("137") }}</v-card-title>
+                  </v-card-item>
+
+                  <v-card-text>
+                    <div>
+                      {{ $t("137Desc") }}
+                      <p class="mt-3">{{ $t("tech") }}:</p>
+                      <ul class="mx-3 my-3">
+                        <li style="font-size: 12px">{{ $t("HTML") }}</li>
+                        <li style="font-size: 12px">{{ $t("JavaScript") }}</li>
+                        <li style="font-size: 12px">{{ $t("VUE") }}</li>
+                        <li style="font-size: 12px">{{ $t("NUXT") }}</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <a href="http://kermanshah.137.demo.hemend.com/en"
+                        target="_blank">http://kermanshah.137.demo.hemend.com/en</a>
+                    </div>
+                  </v-card-text>
+                  <v-card-item>
+                    <v-card-subtitle>
+                      <div>
+                        <span class="me-1">Des 6, 2023</span>
+                      </div>
+                    </v-card-subtitle>
+                  </v-card-item>
+                </v-card>
+              </div>
+            </v-col>
+
+
+
+            <!-- Card 6 -->
+            <v-col cols="12" sm="6" lg="4">
+              <div class="h-100">
+                <v-card class="mx-auto projects-card h-100" max-width="374">
+                  <v-img cover height="250" src="/assets/images/khadamati.jpg"
+                    class="ma-3 rounded basecard-img"></v-img>
 
                   <v-card-item>
                     <v-card-title>{{ $t("khadamati") }}</v-card-title>
@@ -330,9 +385,7 @@ const addTask = () => {
                       </ul>
                     </div>
                     <div>
-                      <a href="https://khadamati.io" target="_blank"
-                        >Khadamati super application</a
-                      >
+                      <a href="https://khadamati.io" target="_blank">Khadamati super application</a>
                     </div>
                   </v-card-text>
                   <v-card-item>
@@ -346,15 +399,10 @@ const addTask = () => {
               </div>
             </v-col>
 
-              <v-col cols="12" sm="6" lg="4">
+            <v-col cols="12" sm="6" lg="4">
               <div class="h-100">
                 <v-card class="mx-auto projects-card h-100" max-width="374">
-                  <v-img
-                    cover
-                    height="250"
-                    src="/assets/images/b2b.png"
-                    class="ma-3 rounded basecard-img"
-                  ></v-img>
+                  <v-img cover height="250" src="/assets/images/b2b.jpg" class="ma-3 rounded basecard-img"></v-img>
 
                   <v-card-item>
                     <v-card-title>{{ $t("b2b") }}</v-card-title>
@@ -372,9 +420,7 @@ const addTask = () => {
                       </ul>
                     </div>
                     <div>
-                      <a href="https://khadamati.io" target="_blank"
-                        >B2b Online Meeting sesions</a
-                      >
+                      <a href="https://khadamati.io" target="_blank">B2b Online Meeting sesions</a>
                     </div>
                   </v-card-text>
                   <v-card-item>
@@ -387,6 +433,8 @@ const addTask = () => {
                 </v-card>
               </div>
             </v-col>
+
+
           </v-row>
         </v-container>
       </div>

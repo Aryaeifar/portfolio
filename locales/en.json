@@ -51,5 +51,13 @@
   "english-digit-desc":"A Vue 3 directive that automatically converts Persian to english",
   
   "b2b": "B2B Meeting",
-  "b2bdesc": "Provides an online solution for booking, managing, and scheduling meetings. Users can view available time slots and reserve their desired meetings. The project focuses on a smooth user experience, clean architecture, and high performance."
+  "b2bdesc": "Provides an online solution for booking, managing, and scheduling meetings. Users can view available time slots and reserve their desired meetings. The project focuses on a smooth user experience, clean architecture, and high performance.",
+
+  "learningNext": "t-Learning",
+  "learningNextDesc": "An online health-sciences education platform for courses, events, and congresses. Built with Next.js for a modern experience for learners, experts, and organizers.",
+
+  "VUE2": "VUE 2",
+  "NUXT2": "NUXT 2",
+  "majara": "Majara",
+  "majaraDesc": "A coworking and cafe platform for booking workspaces, meeting rooms, and community spaces across Tehran branches — from Iranshahr to Mirdamad. Built with Vue 2 and Nuxt 2."
 }
