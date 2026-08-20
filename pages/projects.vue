@@ -9,7 +9,24 @@ useHead({
   meta: [{ name: "description", content: "My amazing site." }],
 });
 
+const doomDialog = ref(false);
+const doomImages = [
+  "/assets/images/doom-cover.png",
+  "/assets/images/doom-gameplay.png",
+  "/assets/images/doom-start.png",
+  "/assets/images/doom-died.png",
+];
+
 const projects = ref([
+  {
+    img: "doom-cover.png",
+    title: t("doom"),
+    text: t("doomDesc"),
+    link: "",
+    linkName: "",
+    frontTech: [t("HTML"), t("JavaScript"), t("REACT"), t("NEXT.JS"), t("AI")],
+    date: "Aug 20, 2026",
+  },
   {
     img: "minagoo.jpg",
     title: t("Minagoo"),
@@ -106,6 +123,49 @@ const addTask = () => {
       <div class="">
         <v-container>
           <v-row>
+            <!-- Doom FPS -->
+            <v-col cols="12" sm="6" lg="4">
+              <div class="h-100">
+                <v-card
+                  class="mx-auto projects-card h-100"
+                  max-width="374"
+                  @click="doomDialog = true"
+                >
+                  <v-img
+                    cover
+                    height="250"
+                    src="/assets/images/doom-cover.png"
+                    class="ma-3 rounded basecard-img"
+                  ></v-img>
+
+                  <v-card-item>
+                    <v-card-title>{{ $t("doom") }}</v-card-title>
+                  </v-card-item>
+
+                  <v-card-text>
+                    <div>
+                      {{ $t("doomDesc") }}
+                      <p class="mt-3">{{ $t("tech") }}:</p>
+                      <ul class="mx-3 my-3">
+                        <li style="font-size: 12px">{{ $t("HTML") }}</li>
+                        <li style="font-size: 12px">{{ $t("JavaScript") }}</li>
+                        <li style="font-size: 12px">{{ $t("REACT") }}</li>
+                        <li style="font-size: 12px">{{ $t("NEXT.JS") }}</li>
+                        <li style="font-size: 12px">{{ $t("AI") }}</li>
+                      </ul>
+                    </div>
+                  </v-card-text>
+                  <v-card-item>
+                    <v-card-subtitle>
+                      <div>
+                        <span class="me-1">Aug 20, 2026</span>
+                      </div>
+                    </v-card-subtitle>
+                  </v-card-item>
+                </v-card>
+              </div>
+            </v-col>
+
             <!-- Card 8 -->
             <v-col cols="12" sm="6" lg="4">
               <div class="h-100">
@@ -439,5 +499,21 @@ const addTask = () => {
         </v-container>
       </div>
     </article>
+
+    <ModalProjectDialog
+      v-model="doomDialog"
+      :title="$t('doom')"
+      :description="$t('doomDialogDesc')"
+      :images="doomImages"
+    >
+      <p class="mt-4">{{ $t("tech") }}:</p>
+      <ul class="mx-3 my-3">
+        <li>{{ $t("HTML") }}</li>
+        <li>{{ $t("JavaScript") }}</li>
+        <li>{{ $t("REACT") }}</li>
+        <li>{{ $t("NEXT.JS") }}</li>
+        <li>{{ $t("AI") }}</li>
+      </ul>
+    </ModalProjectDialog>
   </div>
 </template>

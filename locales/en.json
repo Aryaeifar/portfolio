@@ -59,5 +59,10 @@
   "VUE2": "VUE 2",
   "NUXT2": "NUXT 2",
   "majara": "Majara",
-  "majaraDesc": "A coworking and cafe platform for booking workspaces, meeting rooms, and community spaces across Tehran branches — from Iranshahr to Mirdamad. Built with Vue 2 and Nuxt 2."
+  "majaraDesc": "A coworking and cafe platform for booking workspaces, meeting rooms, and community spaces across Tehran branches — from Iranshahr to Mirdamad. Built with Vue 2 and Nuxt 2.",
+
+  "AI": "AI",
+  "doom": "Doom FPS",
+  "doomDesc": "A browser first-person shooter inspired by classic Doom — also made with AI, Next.js, and React.",
+  "doomDialogDesc": "A browser FPS built with Next.js, React, and React Three Fiber. Pointer-lock mouse look, WASD movement, shooting, reloading, health, and pixel-sprite enemies in a 3D arena. Also made with AI as a fast experiment in bringing retro Doom-style gameplay to the web."
 }
