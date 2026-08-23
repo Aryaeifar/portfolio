@@ -19,7 +19,8 @@
   "VUETIFY": "VUETIFY",
   "TAILWIND": "TAILWIND",
   "GIT": "GIT",
-
+  "yt-style-player": "yt-style-player",
+  "yt-style-player-desc": "A YouTube style video player with a modern design and features like autoplay, loop, and shuffle.",
   "para-three": "Let's connect and collaborate on exciting projects that push the boundaries of web development.",
   "Resume": "Resume",
   "resume-title": "Resume",

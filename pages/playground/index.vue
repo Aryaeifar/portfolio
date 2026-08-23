@@ -72,6 +72,25 @@ useHead({
                 </div>
               </NuxtLink>
             </v-col>
+
+            <v-col cols="12" md="4">
+              <NuxtLink
+                data-v-8cb24504=""
+                class="item relative d-flex align-center"
+                to="https://github.com/Aryaeifar/video-player"
+                target="_blank"
+                title="yt-style-player">
+                <div data-v-8cb24504="" class="item-icon">
+                  <Icon icon="mdi:video-outline" width="50" height="50" class=""></Icon>
+                </div>
+                <div data-v-8cb24504="" class="d-flex flex-column">
+                  <div data-v-8cb24504="" class="title">yt-style-player</div>
+                  <div data-v-8cb24504="" class="desc">
+                    {{ $t('yt-style-player-desc') }}
+                  </div>
+                </div>
+              </NuxtLink>
+            </v-col>
           </v-row>
         </v-container>
       </div>
