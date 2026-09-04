@@ -74,5 +74,9 @@
   "blogAuthorRole": "توسعه‌دهنده فرانت‌اند",
   "blogTags": "برچسب‌ها",
   "projectsSubtitle": "کارهای منتخب مشتری و شخصی — از رابط محصول تا FPS مرورگر.",
-  "playgroundSubtitle": "آزمایش‌های کوچک Vue با ریپوی عمومی: رسم، پلیر و دایرکتیو."
+  "playgroundSubtitle": "آزمایش‌های کوچک Vue با ریپوی عمومی: رسم، پلیر و دایرکتیو.",
+  "changelog": "تغییرات",
+  "changelogSubtitle": "به‌روزرسانی‌ها، نسخه‌ها و بهبودهای محصول.",
+  "changelogFeatures": "امکانات",
+  "changelogFixes": "رفع باگ"
 }

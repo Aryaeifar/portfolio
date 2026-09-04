@@ -78,5 +78,9 @@
   "blogAuthorRole": "Frontend developer",
   "blogTags": "Tags",
   "projectsSubtitle": "Selected client and personal work — from product UIs to a browser FPS.",
-  "playgroundSubtitle": "Small Vue experiments with public repos: drawers, players, and directives."
+  "playgroundSubtitle": "Small Vue experiments with public repos: drawers, players, and directives.",
+  "changelog": "Changelog",
+  "changelogSubtitle": "Product updates, releases, and improvements.",
+  "changelogFeatures": "Features",
+  "changelogFixes": "Bug Fixes"
 }
