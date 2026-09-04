@@ -72,6 +72,9 @@ watch(() => locale.value, (newLocale) => {
           >
         </li>
         <li class="nav-item mx-2">
+          <nuxt-link to="/blog" class="nav-link text-primary">{{ $t('blog') }}</nuxt-link>
+        </li>
+        <li class="nav-item mx-2">
           <a
             href="/assets/Ali-Aryaeifar-Resume.pdf"
             download="Ali-Aryaeifar-Resume.pdf"
