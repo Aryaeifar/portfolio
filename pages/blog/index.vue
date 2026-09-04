@@ -16,7 +16,12 @@ useHead({
     <article>
       <div>
         <v-container>
-          <v-row>
+          <EmptyState
+            v-if="!posts.length"
+            :title="$t('blogEmptyTitle')"
+            :description="$t('blogEmptyDescription')"
+          />
+          <v-row v-else>
             <v-col
               v-for="post in posts"
               :key="post.slug"

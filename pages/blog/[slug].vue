@@ -55,9 +55,14 @@ useHead({
   <div v-else>
     <PageHero :title="$t('blog')" :description="$t('blogNotFound')" />
     <article>
-      <div class="prose page-content">
-        <NuxtLink to="/blog">{{ $t("blogBack") }}</NuxtLink>
-      </div>
+      <v-container>
+        <EmptyState
+          icon="ri:file-unknow-line"
+          :title="$t('blogNotFound')"
+        >
+          <NuxtLink to="/blog">{{ $t("blogBack") }}</NuxtLink>
+        </EmptyState>
+      </v-container>
     </article>
   </div>
 </template>
