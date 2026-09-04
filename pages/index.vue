@@ -1,27 +1,14 @@
 <script setup>
 import { Icon } from '@iconify/vue';
-import { useI18n } from "vue-i18n";
-const { t } = useI18n();
-
-
 </script>
 
 <template>
   <div>
-   
-    <div class="prose mb-8">
-      <h1 class="text-h3 text-title">{{ $t('name') }}</h1>
-    </div>
+    <PageHero :title="$t('name')" :description="$t('para-one')" />
     <article>
-      <div class="prose">
-        <p style="--stagger: 1" data-animate>
-         {{ $t('para-one') }}
-        </p>
-        <!-- <p style="--stagger: 2" data-animate>
-         {{ $t("Open") }} <span class="text-title" style="font-weight: 700;">{{ $t('Work') }}</span>.
-        </p> -->
+      <div class="prose page-content">
         <p style="--stagger: 3" data-animate>
-          {{ $t("para-two") }}
+         {{ $t("para-two") }}
         </p>
         <div style="--stagger: 4" data-animate>
           {{ $t("Skills") }}:

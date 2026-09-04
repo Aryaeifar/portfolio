@@ -11,9 +11,7 @@ useHead({
 
 <template>
   <div>
-    <div class="prose mb-8">
-      <h1 class="text-h3 text-title">{{ $t("Playground") }}</h1>
-    </div>
+    <PageHero :title="$t('Playground')" :description="$t('playgroundSubtitle')" />
     <article>
       <div class="">
         <v-container>

@@ -116,9 +116,7 @@ const addTask = () => {
 
 <template>
   <div>
-    <div class="prose mb-8">
-      <h1 class="text-h3 text-title">{{ $t("projects") }}</h1>
-    </div>
+    <PageHero :title="$t('projects')" :description="$t('projectsSubtitle')" />
     <article>
       <div class="">
         <v-container>

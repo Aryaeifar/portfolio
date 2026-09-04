@@ -65,5 +65,18 @@
   "AI": "AI",
   "doom": "Doom FPS",
   "doomDesc": "A browser first-person shooter inspired by classic Doom — also made with AI, Next.js, and React.",
-  "doomDialogDesc": "A browser FPS built with Next.js, React, and React Three Fiber. Pointer-lock mouse look, WASD movement, shooting, reloading, health, and pixel-sprite enemies in a 3D arena. Also made with AI as a fast experiment in bringing retro Doom-style gameplay to the web."
+  "doomDialogDesc": "A browser FPS built with Next.js, React, and React Three Fiber. Pointer-lock mouse look, WASD movement, shooting, reloading, health, and pixel-sprite enemies in a 3D arena. Also made with AI as a fast experiment in bringing retro Doom-style gameplay to the web.",
+
+  "blog": "Blog",
+  "blogSubtitle": "Notes on frontend, games, and shipping products.",
+  "blogAll": "All",
+  "blogSelectCategory": "Select category",
+  "blogOnThisPage": "On this page",
+  "blogReadMore": "Read more",
+  "blogBack": "Back to all articles",
+  "blogNotFound": "This article was not found.",
+  "blogAuthorRole": "Frontend developer",
+  "blogTags": "Tags",
+  "projectsSubtitle": "Selected client and personal work — from product UIs to a browser FPS.",
+  "playgroundSubtitle": "Small Vue experiments with public repos: drawers, players, and directives."
 }

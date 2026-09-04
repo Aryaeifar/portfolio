@@ -1,5 +1,7 @@
 <script setup>
 import { useWindowScroll } from "@vueuse/core";
+import FlickeringGrid from "~/components/Blog/FlickeringGrid.vue";
+
 const scroll_top = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
@@ -11,11 +13,10 @@ const { y } = useWindowScroll();
     <NuxtLoadingIndicator />
     <div class="default-layout">
       <BaseHeader />
-      <main class="main-container px-7 py-10">
-        <div class="mask-image">
-          <WidgetsBaseAnimation color="red" />
+      <main class="site-page">
+        <div class="blog-hero-grid">
+          <FlickeringGrid />
         </div>
-        <div class="bg-white"></div>
         <slot />
       </main>
       <button v-show="y > 200" class="scroll-to-top" @click="scroll_top">
